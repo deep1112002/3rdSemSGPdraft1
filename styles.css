@@ -125,7 +125,7 @@ h3{
   #nav-bar a {
     float: right;
     display: block;
-    color: #413E66;
+    color: c;
     text-align: center;
     padding: 14px;
     text-decoration: none;
@@ -133,8 +133,8 @@ h3{
     top:5px
   }
 .introductory_text{
-    font-family: 'Inter', sans-serif;
-    color: #413E66;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #A9CCE3  ;
     padding-left:25px ;
     padding-top: 25px;
     padding-right: 25px ;
@@ -195,4 +195,17 @@ hr{
 .Features{
   text-align: center;
   margin:auto;
+}
+
+.introductory_text{
+  animation: typewriter 0.5s steps(50) 0.5s 1 normal both,
+             blinkTextCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: rgba(0,0,0,0);}
 }
